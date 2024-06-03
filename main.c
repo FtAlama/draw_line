@@ -6,7 +6,7 @@
 /*   By: alama <alama@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/24 15:00:13 by alama             #+#    #+#             */
-/*   Updated: 2024/06/03 13:02:14 by alama            ###   ########.fr       */
+/*   Updated: 2024/06/03 15:30:19 by alama            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,6 @@ typedef struct s_data
 
 int	out_prog(t_data *param)
 {
-	int	x;
-	int	y;
-
 	mlx_clear_window(param->mlx, param->win);
 	mlx_destroy_window(param->mlx, param->win);
 	free(param->mlx);
@@ -37,10 +34,7 @@ int	out_prog(t_data *param)
 	param->win = NULL;
 	free(param);
 	param = NULL;
-	if (!param)
-		exit(EXIT_SUCCESS);
-	else
-		exit(EXIT_FAILURE);
+	exit(EXIT_SUCCESS);
 	return (0);
 }
 

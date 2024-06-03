@@ -7,3 +7,6 @@ simple program that draw line when button is pressed and release.
 ```bash
 bash exe && ./a.out
 ```
+
+##the purose
+it's only to see how minilibx works
